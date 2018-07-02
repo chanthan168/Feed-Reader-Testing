@@ -26,7 +26,7 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        // Test a URL of each is defined and is not empty
+        // Test a URL of each feed is defined and not empty
         it('has a URL defined and that the URL is not empty', function(){
           allFeeds.forEach(function(feed){
             expect(feed.url).toBeDefined();
@@ -34,7 +34,7 @@ $(function() {
           });
         });
 
-         // Test a name of each feed is defined and is not empty
+         // Test a name of each feed is defined and not empty
          it('has a name defined and that the name is not empty', function(){
            allFeeds.forEach(function(feed){
              expect(feed.name).toBeDefined();
